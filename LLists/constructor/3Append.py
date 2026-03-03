@@ -9,7 +9,7 @@ class LinkedList:
         new_node = Node(value)
         self.head = new_node
         self.tail = new_node
-        self.length = 4
+        self.length = 1
     
     def printing(self):
         temp = self.head
@@ -27,6 +27,7 @@ class LinkedList:
         else:
             self.tail.next = new_node_to_append
             self.tail = new_node_to_append
+        self.length +=1
 
     def pop(self):
         temp = self.head
@@ -58,3 +59,20 @@ LL.printing()
 D = LL.pop()
 print(D.value,'nodo eliminado')
 LL.printing()
+
+print('------------')
+print('segunda LList')
+OneNodeLL = LinkedList('A')
+OneNodeLL.printing()
+print(OneNodeLL.pop())
+OneNodeLL.printing()
+
+
+print('------------')
+print('tercera LList')
+TerLL = LinkedList('H')
+TerLL.append('I')
+
+print(TerLL.pop())
+print(TerLL.pop())
+print(TerLL.pop())
