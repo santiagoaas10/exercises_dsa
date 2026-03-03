@@ -15,3 +15,6 @@ class Linked_List:
 my_linked_list = Linked_List(4)
 
 print(my_linked_list.head.value)
+
+#vamos a crear una lista completa y a iterar sobre ella
+
